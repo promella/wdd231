@@ -1,0 +1,56 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+header,
+main,
+footer {
+    padding: 1rem;
+}
+
+.navigation {
+    display: none;
+    list-style: none;
+    padding: 0;
+}
+
+.navigation.open {
+    display: block;
+}
+
+#menu {
+    font-size: 2rem;
+    background: none;
+    border: none;
+}
+
+#courses {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.course-card {
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #e5e5e5;
+}
+
+.completed {
+    background-color: #0b6e4f;
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.buttons button {
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+}
