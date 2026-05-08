@@ -148,7 +148,11 @@ section {
 .social img:hover {
     transform: scale(1.1);
 }
-
+/* LOGO */
+.logo {
+    width: 60px;
+    height: auto;
+}
 /* FOOTER */
 footer {
     background-color: #0b6e4f;
