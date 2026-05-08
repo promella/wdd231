@@ -43,6 +43,17 @@ section {
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
+/* ABOUT ME */
+.profile-image {
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+
+    display: block;
+    margin: 1rem auto;
+
+    border-radius: 10px;
+}
 
 /* NAVIGATION */
 .navigation {
