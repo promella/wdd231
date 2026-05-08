@@ -6,12 +6,13 @@
 
     <title>WDD231 Home</title>
 
-    <meta name="description" content="WDD231 course home page">
+    <meta name="description" content="WDD231 course home page for Prominence Ncube">
     <meta name="author" content="Prominence Ncube">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- CSS -->
@@ -28,27 +29,38 @@
 <body>
 
 <header>
+
     <img src="images/logo.svg" alt="Site Logo" width="50">
 
     <span>Prominence Ncube</span>
 
-    <button id="menu"></button>
+    <button id="menu" aria-label="Menu Button">&#9776;</button>
 
     <nav>
         <ul class="navigation">
-            <li><a href="#">Home</a></li>
+            <li><a href="#" class="active">Home</a></li>
             <li><a href="chamber/">Chamber</a></li>
             <li><a href="final/">Final</a></li>
         </ul>
     </nav>
+
 </header>
 
 <main>
+
     <h1>Home</h1>
 
+    <!-- ABOUT ME -->
     <section>
+
         <h2>About Me</h2>
-<img src="images/profile.jpg" alt="Prominence Ncube" width="250">
+
+        <img 
+            src="images/profile.jpg" 
+            alt="Prominence Ncube" 
+            class="profile-image"
+        >
+
         <p>
             Hello! My name is Prominence Ncube. I am a software development
             student with a strong interest in web development, programming,
@@ -68,9 +80,12 @@
             coding, I enjoy learning new technologies and working on creative
             digital projects.
         </p>
+
     </section>
 
+    <!-- COURSES -->
     <section>
+
         <h2>Courses</h2>
 
         <div class="buttons">
@@ -81,10 +96,16 @@
 
         <div id="courses"></div>
 
-        <p>Total Credits: <span id="credits"></span></p>
+        <p>
+            Total Credits:
+            <span id="credits"></span>
+        </p>
+
     </section>
 
+    <!-- CERTIFICATE -->
     <section>
+
         <h2>Certificate</h2>
 
         <p>
@@ -92,21 +113,36 @@
             programming fundamentals, responsive design, and modern
             software technologies.
         </p>
+
     </section>
+
 </main>
 
 <footer>
+
+    <!-- SOCIAL MEDIA -->
     <div class="social">
-        <a href="https://github.com/">GitHub</a>
-        <a href="https://linkedin.com/">LinkedIn</a>
+
+        <a href="https://github.com/" target="_blank">
+            <img src="images/github.svg" alt="GitHub Icon">
+        </a>
+
+        <a href="https://linkedin.com/" target="_blank">
+            <img src="images/linkedin.svg" alt="LinkedIn Icon">
+        </a>
+
     </div>
 
+    <!-- COPYRIGHT -->
     <p>
-        &copy; <span id="currentyear"></span>
-        Prominence Ncube | South Africa
+        &copy;
+        <span id="currentyear"></span>
+        | Prominence Ncube | South Africa
     </p>
 
+    <!-- LAST MODIFIED -->
     <p id="lastModified"></p>
+
 </footer>
 
 </body>
