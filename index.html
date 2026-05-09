@@ -2,27 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>WDD231 Home</title>
+    <title>WDD231 Home | Prominence Ncube</title>
 
-    <meta name="description" content="WDD231 course home page for Prominence Ncube">
+    <meta name="description" content="WDD231 course home page for Prominence Ncube showcasing web development projects, certificates, and coursework.">
+
     <meta name="author" content="Prominence Ncube">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="styles/normalise.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+
     <link rel="stylesheet" href="styles/small.css">
+
     <link rel="stylesheet" href="styles/larger.css">
 
     <!-- JavaScript -->
     <script src="scripts/navigation.js" defer></script>
+
     <script src="scripts/date.js" defer></script>
+
     <script src="scripts/course.js" defer></script>
 </head>
 
@@ -30,17 +37,43 @@
 
 <header>
 
-    <img src="images/website-click.svg" alt="Site Logo" width="50">
+    <!-- LOGO -->
+    <img
+        src="images/website-click.svg"
+        alt="Site Logo"
+        class="logo"
+    >
 
+    <!-- NAME -->
     <span>Prominence Ncube</span>
 
-    <button id="menu" aria-label="Menu Button">&#9776;</button>
+    <!-- MENU BUTTON -->
+    <button id="menu" aria-label="Menu Button">
+        &#9776;
+    </button>
 
+    <!-- NAVIGATION -->
     <nav>
         <ul class="navigation">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="chamber/">Chamber</a></li>
-            <li><a href="final/">Final</a></li>
+
+            <li>
+                <a href="index.html" class="active">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="chamber/index.html">
+                    Chamber
+                </a>
+            </li>
+
+            <li>
+                <a href="final/index.html">
+                    Final
+                </a>
+            </li>
+
         </ul>
     </nav>
 
@@ -55,30 +88,28 @@
 
         <h2>About Me</h2>
 
-        <img 
-            src="images/profile.jpg" 
-            alt="Prominence Ncube" 
+        <img
+            src="images/profile.jpg"
+            alt="Prominence Ncube"
             class="profile-image"
         >
 
         <p>
             Hello! My name is Prominence Ncube. I am a software development
-            student with a strong interest in web development, programming,
-            and technology.
+            student passionate about web development, programming,
+            and modern technology.
         </p>
 
         <p>
-            I am currently learning HTML, CSS, JavaScript, and C# while
-            building responsive and interactive websites for my coursework.
-            I enjoy solving problems, creating projects, and improving my
-            coding skills every day.
+            I am currently studying HTML, CSS, JavaScript, and C#
+            while creating responsive and interactive websites for
+            my coursework and personal projects.
         </p>
 
         <p>
-            My goal is to become a professional software developer and build
-            modern applications that help people and businesses. Outside of
-            coding, I enjoy learning new technologies and working on creative
-            digital projects.
+            My goal is to become a professional software developer
+            and build modern applications that solve real-world
+            problems for businesses and communities.
         </p>
 
     </section>
@@ -88,14 +119,27 @@
 
         <h2>Courses</h2>
 
+        <!-- FILTER BUTTONS -->
         <div class="buttons">
-            <button id="all">All Courses</button>
-            <button id="wdd">WDD Courses</button>
-            <button id="cse">CSE Courses</button>
+
+            <button id="all">
+                All Courses
+            </button>
+
+            <button id="wdd">
+                WDD Courses
+            </button>
+
+            <button id="cse">
+                CSE Courses
+            </button>
+
         </div>
 
+        <!-- COURSE CARDS -->
         <div id="courses"></div>
 
+        <!-- TOTAL CREDITS -->
         <p>
             Total Credits:
             <span id="credits"></span>
@@ -109,10 +153,20 @@
         <h2>Certificate</h2>
 
         <p>
-            Software Development Certificate focused on web development,
-            programming fundamentals, responsive design, and modern
-            software technologies.
+            Software Development Certificate focused on:
         </p>
+
+        <ul>
+            <li>Responsive Web Design</li>
+
+            <li>JavaScript Programming</li>
+
+            <li>Software Development Fundamentals</li>
+
+            <li>Object-Oriented Programming</li>
+
+            <li>Frontend Web Development</li>
+        </ul>
 
     </section>
 
@@ -120,15 +174,25 @@
 
 <footer>
 
-    <!-- SOCIAL MEDIA -->
+    <!-- SOCIAL LINKS -->
     <div class="social">
 
         <a href="https://github.com/" target="_blank">
-            <img src="images/github.svg" alt="GitHub Icon">
+
+            <img
+                src="images/github.svg"
+                alt="GitHub Icon"
+            >
+
         </a>
 
         <a href="https://linkedin.com/" target="_blank">
-            <img src="images/linkedin-svgrepo-com.svg" alt="LinkedIn Icon">
+
+            <img
+                src="images/linkedin-svgrepo-com.svg"
+                alt="LinkedIn Icon"
+            >
+
         </a>
 
     </div>
@@ -137,7 +201,10 @@
     <p>
         &copy;
         <span id="currentyear"></span>
-        | Prominence Ncube | South Africa
+
+        | Prominence Ncube
+
+        | South Africa
     </p>
 
     <!-- LAST MODIFIED -->
