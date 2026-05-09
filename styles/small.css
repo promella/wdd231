@@ -7,7 +7,9 @@ body {
     overflow-x: hidden;
 }
 
-/* HEADER */
+/* =========================
+   HEADER (clean + modern)
+========================= */
 header {
     background-color: #0b6e4f;
     color: white;
@@ -24,39 +26,15 @@ header span {
     font-weight: bold;
 }
 
-/* MAIN */
-main {
-    padding: 1rem;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-h1,
-h2 {
-    color: #0b6e4f;
-}
-
-/* SECTIONS */
-section {
-    background-color: white;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-/* ABOUT ME */
-.profile-image {
-    width: 200px;
-    max-width: 100%;
+/* LOGO */
+.logo {
+    width: 60px;
     height: auto;
-
-    display: block;
-    margin: 1rem auto;
-
-    border-radius: 10px;
 }
 
-/* NAVIGATION */
+/* =========================
+   NAVIGATION (clean dropdown style)
+========================= */
 .navigation {
     display: none;
     list-style: none;
@@ -65,7 +43,9 @@ section {
 }
 
 .navigation.open {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .navigation li {
@@ -76,17 +56,20 @@ section {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
 }
 
 .navigation a:hover {
-    text-decoration: underline;
+    background-color: rgba(255,255,255,0.2);
 }
+
 .navigation a.active {
     background-color: white;
     color: #0b6e4f;
 }
 
-/* HAMBURGER BUTTON */
+/* HAMBURGER */
 #menu {
     font-size: 2rem;
     background: none;
@@ -95,7 +78,59 @@ section {
     cursor: pointer;
 }
 
-/* COURSE BUTTONS */
+/* =========================
+   MAIN LAYOUT (MATCHES REF SITE)
+========================= */
+main {
+    padding: 1rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* HERO SECTION (NEW - IMPORTANT) */
+.hero {
+    position: relative;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background-color: rgba(0,0,0,0.4);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+
+/* SECTION CARDS (REFERENCE STYLE) */
+section {
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* HEADINGS */
+h1, h2 {
+    color: #0b6e4f;
+}
+
+/* =========================
+   COURSE BUTTONS
+========================= */
 .buttons {
     display: flex;
     gap: 1rem;
@@ -110,25 +145,35 @@ section {
     color: white;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: 0.3s;
 }
 
 .buttons button:hover {
     background-color: #09543d;
 }
 
-/* COURSE CARDS */
+/* =========================
+   GRID (THIS IS KEY FOR REF LOOK)
+========================= */
 #courses {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
     margin-top: 1rem;
 }
 
+/* COURSE CARDS */
 .course-card {
     padding: 1rem;
     border-radius: 10px;
     background-color: #e5e5e5;
     font-weight: bold;
+
+    transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+    transform: scale(1.03);
 }
 
 .completed {
@@ -136,7 +181,23 @@ section {
     color: white;
 }
 
-/* SOCIAL ICONS */
+/* =========================
+   ABOUT IMAGE
+========================= */
+.profile-image {
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+
+    display: block;
+    margin: 1rem auto;
+
+    border-radius: 10px;
+}
+
+/* =========================
+   SOCIAL ICONS
+========================= */
 .social {
     display: flex;
     justify-content: center;
@@ -153,12 +214,10 @@ section {
 .social img:hover {
     transform: scale(1.1);
 }
-/* LOGO */
-.logo {
-    width: 60px;
-    height: auto;
-}
-/* FOOTER */
+
+/* =========================
+   FOOTER
+========================= */
 footer {
     background-color: #0b6e4f;
     color: white;
