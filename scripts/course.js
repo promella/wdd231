@@ -1,57 +1,54 @@
 const courses = [
     {
-        subject: "WDD",
-        number: 130,
-        title: "Web Fundamentals",
+        code: "WDD130",
+        name: "Web Fundamentals",
         credits: 2,
+        subject: "WDD",
         completed: true
     },
     {
-        subject: "WDD",
-        number: 131,
-        title: "Dynamic Web Fundamentals",
+        code: "WDD131",
+        name: "Dynamic Web Fundamentals",
         credits: 2,
+        subject: "WDD",
         completed: true
     },
     {
-        subject: "WDD",
-        number: 231,
-        title: "Frontend Web Development I",
+        code: "WDD231",
+        name: "Web Frontend Development I",
         credits: 2,
+        subject: "WDD",
         completed: false
     },
     {
-        subject: "CSE",
-        number: 110,
-        title: "Introduction to Programming",
+        code: "CSE110",
+        name: "Programming Building Blocks",
         credits: 2,
+        subject: "CSE",
         completed: true
     },
     {
-        subject: "CSE",
-        number: 111,
-        title: "Programming with Functions",
+        code: "CSE111",
+        name: "Programming with Functions",
         credits: 2,
+        subject: "CSE",
         completed: true
     },
     {
-        subject: "CSE",
-        number: 210,
-        title: "Programming with Classes",
+        code: "CSE210",
+        name: "Programming with Classes",
         credits: 2,
-        completed: true
+        subject: "CSE",
+        completed: false
     }
 ];
 
-const courseContainer = document.querySelector("#courses");
-
-const allButton = document.querySelector("#all");
-const wddButton = document.querySelector("#wdd");
-const cseButton = document.querySelector("#cse");
+const coursesContainer = document.querySelector("#courses");
+const creditDisplay = document.querySelector("#credits");
 
 function displayCourses(courseList) {
 
-    courseContainer.innerHTML = "";
+    coursesContainer.innerHTML = "";
 
     courseList.forEach(course => {
 
@@ -64,33 +61,29 @@ function displayCourses(courseList) {
         }
 
         card.innerHTML = `
-            <h3>${course.subject} ${course.number}</h3>
-            <p>${course.title}</p>
+            <h3>${course.code}</h3>
+            <p>${course.name}</p>
             <p>${course.credits} Credits</p>
         `;
 
-        courseContainer.appendChild(card);
+        coursesContainer.appendChild(card);
     });
-
-    displayTotalCredits(courseList);
-}
-
-function displayTotalCredits(courseList) {
 
     const totalCredits = courseList.reduce(
         (total, course) => total + course.credits,
         0
     );
 
-    document.querySelector("#credits").textContent =
-        totalCredits;
+    creditDisplay.textContent = totalCredits;
 }
 
-allButton.addEventListener("click", () => {
+displayCourses(courses);
+
+document.querySelector("#all").addEventListener("click", () => {
     displayCourses(courses);
 });
 
-wddButton.addEventListener("click", () => {
+document.querySelector("#wdd").addEventListener("click", () => {
 
     const wddCourses = courses.filter(course =>
         course.subject === "WDD"
@@ -99,7 +92,7 @@ wddButton.addEventListener("click", () => {
     displayCourses(wddCourses);
 });
 
-cseButton.addEventListener("click", () => {
+document.querySelector("#cse").addEventListener("click", () => {
 
     const cseCourses = courses.filter(course =>
         course.subject === "CSE"
@@ -107,5 +100,3 @@ cseButton.addEventListener("click", () => {
 
     displayCourses(cseCourses);
 });
-
-displayCourses(courses);
