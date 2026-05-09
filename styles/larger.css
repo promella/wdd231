@@ -1,23 +1,5 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    background-color: #f5f5f5;
-    color: #222;
-    line-height: 1.6;
-}
-
-/* =========================
-   HEADER (DESKTOP STYLE)
-========================= */
-
 header {
-    background-color: #0b6e4f;
-    color: white;
     padding: 1rem 2rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 /* hide hamburger on large screens */
@@ -25,14 +7,7 @@ header {
     display: none;
 }
 
-/* =========================
-   NAVIGATION (HORIZONTAL BAR)
-========================= */
-
-nav {
-    width: auto;
-}
-
+/* NAVIGATION (desktop horizontal) */
 .navigation {
     display: flex !important;
     flex-direction: row;
@@ -57,10 +32,7 @@ nav {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* =========================
-   MAIN LAYOUT (REFERENCE STYLE)
-========================= */
-
+/* MAIN GRID LAYOUT */
 main {
     max-width: 1100px;
     margin: 0 auto;
@@ -71,121 +43,22 @@ main {
     gap: 1.5rem;
 }
 
-/* make sections look like cards still */
-section {
-    background-color: white;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-/* HERO (if you have it) */
+/* HERO spans full width */
 .hero {
     grid-column: 1 / -1;
 }
 
-/* =========================
-   COURSE GRID (IMPROVED)
-========================= */
-
+/* COURSE GRID desktop */
 #courses {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
 }
 
-.course-card {
-    background-color: #e5e5e5;
-    padding: 1rem;
-    border-radius: 10px;
-    text-align: center;
-    font-weight: bold;
-
-    transition: transform 0.3s ease;
+/* SECTION CARD (desktop spacing) */
+section {
+    padding: 1.5rem;
 }
 
-.course-card:hover {
-    transform: scale(1.05);
-}
-
-.completed {
-    background-color: #0b6e4f;
-    color: white;
-}
-
-/* =========================
-   ABOUT IMAGE
-========================= */
-
-.profile-image {
-    width: 200px;
-    height: auto;
-    display: block;
-    margin: 1rem auto;
-    border-radius: 10px;
-}
-
-/* =========================
-   BUTTONS (CENTERED)
-========================= */
-
+/* BUTTON CENTERING */
 .buttons {
-    display: flex;
     justify-content: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
-}
-
-.buttons button {
-    padding: 0.7rem 1.2rem;
-    border: none;
-    background-color: #0b6e4f;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.buttons button:hover {
-    background-color: #09543d;
-}
-
-/* =========================
-   SOCIAL
-========================= */
-
-.social {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin: 1rem 0;
-}
-
-.social img {
-    width: 40px;
-    height: 40px;
-    transition: transform 0.3s ease;
-}
-
-.social img:hover {
-    transform: scale(1.1);
-}
-
-/* =========================
-   FOOTER
-========================= */
-
-footer {
-    background-color: #0b6e4f;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
 }
