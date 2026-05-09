@@ -52,7 +52,7 @@ header span {
 }
 
 .navigation a:hover {
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .navigation a.active {
@@ -97,7 +97,7 @@ main {
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
     padding: 1rem 2rem;
     border-radius: 10px;
 }
@@ -108,11 +108,12 @@ section {
     padding: 1rem;
     margin-bottom: 1.5rem;
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* HEADINGS */
-h1, h2 {
+h1,
+h2 {
     color: #0b6e4f;
 }
 
