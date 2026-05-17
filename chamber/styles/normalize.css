@@ -1,0 +1,36 @@
+
+
+/* 1. Remove default margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Improve default font rendering */
+html {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* 3. Make images responsive by default */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* 4. Remove list styles */
+ul, ol {
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
