@@ -6,27 +6,78 @@ async function getMembers() {
 
     displayMembers(data);
 }
-
 const displayMembers = (members) => {
+
     members.forEach((member) => {
 
+        // Create card
         const card = document.createElement("section");
+        card.classList.add("member-card");
 
-        card.innerHTML = `
-            <img src="images/${member.image}" alt="${member.name}" loading="lazy">
+        // Business image container
+        const imageDiv = document.createElement("div");
+        imageDiv.classList.add("image-container");
 
-            <h3>${member.name}</h3>
+        const image = document.createElement("img");
+        image.setAttribute("src", `images/${member.image}`);
+        image.setAttribute("alt", `${member.name} logo`);
+        image.setAttribute("loading", "lazy");
+        image.setAttribute("width", "300");
+        image.setAttribute("height", "200");
 
-            <p>${member.address}</p>
+        imageDiv.appendChild(image);
 
-            <p>${member.phone}</p>
+        // Business info container
+        const infoDiv = document.createElement("div");
+        infoDiv.classList.add("member-info");
 
-            <a href="${member.website}" target="_blank">
-                Visit Website
-            </a>
+        // Business name
+        const name = document.createElement("h3");
+        name.textContent = member.name;
 
-            <p>${member.description}</p>
-        `;
+        // Address
+        const address = document.createElement("p");
+        address.innerHTML = `<strong>Address:</strong> ${member.address}`;
+
+        // Phone
+        const phone = document.createElement("p");
+        phone.innerHTML = `<strong>Phone:</strong> ${member.phone}`;
+
+        // Website
+        const website = document.createElement("a");
+        website.setAttribute("href", member.website);
+        website.setAttribute("target", "_blank");
+        website.textContent = "Visit Website";
+
+        // Membership level
+        const membership = document.createElement("p");
+
+        let level = "";
+
+        if (member.membership === 1) {
+            level = "Member";
+        } else if (member.membership === 2) {
+            level = "Silver";
+        } else {
+            level = "Gold";
+        }
+
+        membership.innerHTML = `<strong>Membership:</strong> ${level}`;
+
+        // Description
+        const description = document.createElement("p");
+        description.textContent = member.description;
+
+        // Append everything
+        infoDiv.appendChild(name);
+        infoDiv.appendChild(address);
+        infoDiv.appendChild(phone);
+        infoDiv.appendChild(website);
+        infoDiv.appendChild(membership);
+        infoDiv.appendChild(description);
+
+        card.appendChild(imageDiv);
+        card.appendChild(infoDiv);
 
         membersContainer.appendChild(card);
     });

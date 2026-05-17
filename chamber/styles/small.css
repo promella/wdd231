@@ -55,10 +55,49 @@ main {
     background-color: var(--secondary);
 }
 
-#members img {
+.member-card {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.member-card:hover {
+    transform: scale(1.02);
+}
+
+.image-container {
+    width: 100%;
+}
+
+.image-container img {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    border-radius: 8px;
+}
+
+.member-info {
+    margin-top: 1rem;
+}
+
+.member-info h3 {
+    margin: 0 0 .5rem 0;
+    color: #0b6e4f;
+}
+
+.member-info a {
+    display: inline-block;
+    margin: .5rem 0;
+    color: #0b6e4f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.member-info a:hover {
+    text-decoration: underline;
 }
 
 footer {
