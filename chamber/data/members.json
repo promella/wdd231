@@ -1,0 +1,71 @@
+[
+    {
+        "name": "Tech Solutions SA",
+        "address": "12 Nelson Mandela Square, Johannesburg",
+        "phone": "+27 11 222 1111",
+        "website": "https://www.techsolutions.co.za",
+        "image": "business1.webp",
+        "membership": 3,
+        "description": "Leading IT solutions company."
+    },
+
+    {
+        "name": "Ubuntu Finance",
+        "address": "45 Main Street, Sandton",
+        "phone": "+27 11 333 2222",
+        "website": "https://www.ubuntufinance.co.za",
+        "image": "business2.webp",
+        "membership": 2,
+        "description": "Financial services and consulting."
+    },
+
+    {
+        "name": "Green Energy Africa",
+        "address": "88 Eco Park, Midrand",
+        "phone": "+27 11 444 3333",
+        "website": "https://www.greenenergyafrica.co.za",
+        "image": "business3.webp",
+        "membership": 1,
+        "description": "Renewable energy specialists."
+    },
+
+    {
+        "name": "City Logistics",
+        "address": "21 Industrial Road, Germiston",
+        "phone": "+27 11 555 4444",
+        "website": "https://www.citylogistics.co.za",
+        "image": "business4.webp",
+        "membership": 2,
+        "description": "Transportation and logistics company."
+    },
+
+    {
+        "name": "Urban Foods",
+        "address": "14 Market Street, Johannesburg",
+        "phone": "+27 11 666 5555",
+        "website": "https://www.urbanfoods.co.za",
+        "image": "business5.webp",
+        "membership": 1,
+        "description": "Fresh produce supplier."
+    },
+
+    {
+        "name": "Smart Build Construction",
+        "address": "7 Builder Avenue, Pretoria",
+        "phone": "+27 11 777 6666",
+        "website": "https://www.smartbuild.co.za",
+        "image": "business6.webp",
+        "membership": 3,
+        "description": "Commercial construction experts."
+    },
+
+    {
+        "name": "Creative Media Studio",
+        "address": "99 Design Hub, Rosebank",
+        "phone": "+27 11 888 7777",
+        "website": "https://www.creativemedia.co.za",
+        "image": "business7.webp",
+        "membership": 2,
+        "description": "Digital marketing and branding."
+    }
+]
