@@ -99,6 +99,75 @@ main {
 .member-info a:hover {
     text-decoration: underline;
 }
+/* HERO */
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #0b6e4f;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+/* HOME GRID */
+
+.home-grid {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* SPOTLIGHTS */
+
+#spotlights {
+    display: grid;
+    gap: 1rem;
+}
+
+.spotlight {
+    border-top: 1px solid #ccc;
+    padding-top: 1rem;
+}
+
+.spotlight img {
+    width: 120px;
+}
+
+/* WEATHER */
+
+.weather-info {
+    margin-bottom: 1rem;
+}
 
 footer {
     background-color: var(--primary);

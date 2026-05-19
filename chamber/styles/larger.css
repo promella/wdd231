@@ -7,9 +7,20 @@
     #members.grid {
         grid-template-columns: repeat(3, 1fr);
     }
+    @media screen and (min-width: 768px) {
 
+    .home-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+
+}
     footer {
         display: flex;
         justify-content: space-between;
     }
 }
+
