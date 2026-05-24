@@ -51,9 +51,9 @@
             <span>Chamber of Commerce</span>
         </div>
 
-        <button id="menu"></button>
+       <button id="menu" aria-label="Open navigation menu"></button>
 
-        <nav class="navigation">
+       <nav class="navigation" aria-label="Main Navigation">
             <a href="index.html" class="active">Home</a>
             <a href="directory.html">Directory</a>
             <a href="#">Join</a>
@@ -63,21 +63,22 @@
 
     <main>
 
-        <!-- HERO SECTION -->
-        <section class="hero">
+       <section class="hero">
 
-            <img src="images/johannesburg.skyline.2017.jpg"
-                alt="City skyline representing the Chamber of Commerce community">
+    <img src="images/johannesburg.skyline.2017.jpg"
+        alt="City skyline representing the Chamber of Commerce community" loading="lazy">
 
-            <div class="hero-text">
-                <h1>Welcome to the Johannesburg Chamber of Commerce</h1>
+    <div class="hero-overlay"></div>
 
-                <a href="#" class="cta-button">
-                    Join the Chamber
-                </a>
-            </div>
+    <div class="hero-text">
+        <h1>Welcome to the Johannesburg Chamber of Commerce</h1>
 
-        </section>
+        <a href="#" class="cta-button">
+            Join the Chamber
+        </a>
+    </div>
+
+</section>
 
         <!-- HOME GRID -->
         <div class="home-grid">
@@ -120,11 +121,11 @@
 
     </main>
 
-    <footer>
-        <p>&copy; 2026 Chamber of Commerce</p>
-        <p>Prominence Ncube | WDD231</p>
-    </footer>
-
+   <footer>
+    <p>&copy; 2026 Johannesburg Chamber of Commerce</p>
+    <p>Prominence Ncube | WDD231</p>
+    <p>Johannesburg, South Africa</p>
+</footer>
 </body>
 
 </html>
