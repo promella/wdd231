@@ -191,6 +191,10 @@ main {
 .weather-info {
     margin-bottom: 1rem;
 }
+#weather-icon {
+    width: 80px;
+    height: 80px;
+}
 
 /* SPOTLIGHTS */
 
