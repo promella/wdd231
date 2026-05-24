@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Home | Chamber of Commerce</title>
 
-    <meta name="description" content="Welcome to the Chamber of Commerce. Discover local businesses, events, weather updates, and community opportunities.">
+    <meta name="description"
+        content="Welcome to the Chamber of Commerce. Discover local businesses, events, weather updates, and community opportunities.">
     <meta name="author" content="Prominence Ncube">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
 
@@ -17,82 +25,83 @@
 
 <body>
 
-<header>
-    <div class="logo">
-        <img src="images/logo.webp" alt="Chamber Logo">
-        <span>Chamber of Commerce</span>
-    </div>
-
-    <button id="menu"></button>
-
-    <nav class="navigation">
-        <a href="index.html" class="active">Home</a>
-        <a href="directory.html">Directory</a>
-        <a href="#">Join</a>
-        <a href="#">Discover</a>
-    </nav>
-</header>
-
-<main>
-
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <img src="images/hero.webp" alt="City Hero Image">
-
-        <div class="hero-text">
-            <h1>Welcome to the Chamber of Commerce</h1>
-
-            <a href="#" class="cta-button">
-                Join the Chamber
-            </a>
+    <header>
+        <div class="logo">
+            <img src="images/logo.webp" alt="Chamber Logo">
+            <span>Chamber of Commerce</span>
         </div>
-    </section>
 
-    <!-- HOME GRID -->
-    <div class="home-grid">
+        <button id="menu"></button>
 
-        <!-- EVENTS -->
-        <section class="card">
-            <h2>Current Events</h2>
+        <nav class="navigation">
+            <a href="index.html" class="active">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="#">Join</a>
+            <a href="#">Discover</a>
+        </nav>
+    </header>
 
-            <p><strong>Business Networking Expo</strong></p>
-            <p>Join local entrepreneurs this Friday at 6 PM.</p>
+    <main>
 
-            <hr>
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <img src="images/hero.webp" alt="City Hero Image">
 
-            <p><strong>Community Market Day</strong></p>
-            <p>Support local businesses this weekend downtown.</p>
-        </section>
+            <div class="hero-text">
+                <h1>Welcome to the Chamber of Commerce</h1>
 
-        <!-- WEATHER -->
-        <section class="card weather-card">
-            <h2>Weather</h2>
-
-            <div class="weather-info">
-                <p id="current-temp"></p>
-                <p id="weather-desc"></p>
+                <a href="#" class="cta-button">
+                    Join the Chamber
+                </a>
             </div>
-
-            <h3>3-Day Forecast</h3>
-
-            <div id="forecast"></div>
         </section>
 
-        <!-- SPOTLIGHTS -->
-        <section class="card spotlight-card">
-            <h2>Company Spotlights</h2>
+        <!-- HOME GRID -->
+        <div class="home-grid">
 
-            <div id="spotlights"></div>
-        </section>
+            <!-- EVENTS -->
+            <section class="card">
+                <h2>Current Events</h2>
 
-    </div>
+                <p><strong>Business Networking Expo</strong></p>
+                <p>Join local entrepreneurs this Friday at 6 PM.</p>
 
-</main>
+                <hr>
 
-<footer>
-    <p>&copy; 2026 Chamber of Commerce</p>
-    <p>Prominence Ncube | WDD231</p>
-</footer>
+                <p><strong>Community Market Day</strong></p>
+                <p>Support local businesses this weekend downtown.</p>
+            </section>
+
+            <!-- WEATHER -->
+            <section class="card weather-card">
+                <h2>Weather</h2>
+
+                <div class="weather-info">
+                    <p id="current-temp"></p>
+                    <p id="weather-desc"></p>
+                </div>
+
+                <h3>3-Day Forecast</h3>
+
+                <div id="forecast"></div>
+            </section>
+
+            <!-- SPOTLIGHTS -->
+            <section class="card spotlight-card">
+                <h2>Company Spotlights</h2>
+
+                <div id="spotlights"></div>
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Chamber of Commerce</p>
+        <p>Prominence Ncube | WDD231</p>
+    </footer>
 
 </body>
+
 </html>
