@@ -2,7 +2,7 @@ const currentTemp = document.querySelector('#current-temp');
 const weatherDesc = document.querySelector('#weather-desc');
 const forecastDiv = document.querySelector('#forecast');
 
-const url = 'https://api.openweathermap.org/data/2.5/forecast?lat=-17.82&lon=31.05&units=metric&appid=YOUR_API_KEY';
+const url = 'https://api.openweathermap.org/data/2.5/forecast?lat=-17.82&lon=31.05&units=metric&appid=488f62652c2ffbb47e8a191b694279be';
 
 // WEATHER
 async function apiFetch() {
