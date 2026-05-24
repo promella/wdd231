@@ -4,12 +4,22 @@
     --text: #222222;
 }
 
+/* GLOBAL */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     background-color: white;
-    color: var(--dark);
+    color: var(--text);
+    line-height: 1.6;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* HEADER */
 
 header {
     background-color: var(--primary);
@@ -17,20 +27,98 @@ header {
     padding: 1rem;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo img {
+    width: 50px;
+}
+
 .navigation {
     display: flex;
     flex-direction: column;
     gap: .5rem;
+    margin-top: 1rem;
 }
 
 .navigation a {
     color: white;
     text-decoration: none;
+    padding: .5rem;
 }
+
+.navigation a:hover,
+.navigation a.active {
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 5px;
+}
+
+/* MAIN */
 
 main {
     padding: 1rem;
 }
+
+/* HERO */
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: white;
+    max-width: 300px;
+}
+
+.hero-text h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--primary);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #09543d;
+}
+
+/* HOME GRID */
+
+.home-grid {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.card {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* MEMBER DIRECTORY */
 
 .view-buttons {
     margin-bottom: 1rem;
@@ -48,13 +136,6 @@ main {
     gap: 1rem;
 }
 
-#members section {
-    border: 1px solid #ccc;
-    padding: 1rem;
-    border-radius: 10px;
-    background-color: var(--secondary);
-}
-
 .member-card {
     background-color: #f4f4f4;
     border: 1px solid #ccc;
@@ -66,10 +147,6 @@ main {
 
 .member-card:hover {
     transform: scale(1.02);
-}
-
-.image-container {
-    width: 100%;
 }
 
 .image-container img {
@@ -85,13 +162,13 @@ main {
 
 .member-info h3 {
     margin: 0 0 .5rem 0;
-    color: #0b6e4f;
+    color: var(--primary);
 }
 
 .member-info a {
     display: inline-block;
     margin: .5rem 0;
-    color: #0b6e4f;
+    color: var(--primary);
     text-decoration: none;
     font-weight: bold;
 }
@@ -99,52 +176,11 @@ main {
 .member-info a:hover {
     text-decoration: underline;
 }
-/* HERO */
 
-.hero {
-    position: relative;
-}
+/* WEATHER */
 
-.hero img {
-    width: 100%;
-    display: block;
-}
-
-.hero-text {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
-    color: white;
-}
-
-.hero-text h1 {
-    font-size: 2rem;
-}
-
-.cta-button {
-    display: inline-block;
-    background-color: #0b6e4f;
-    color: white;
-    padding: 0.8rem 1.5rem;
-    text-decoration: none;
-    border-radius: 8px;
-    margin-top: 1rem;
-}
-
-/* HOME GRID */
-
-.home-grid {
-    display: grid;
-    gap: 1rem;
-    padding: 1rem;
-}
-
-.card {
-    background: white;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+.weather-info {
+    margin-bottom: 1rem;
 }
 
 /* SPOTLIGHTS */
@@ -163,11 +199,7 @@ main {
     width: 120px;
 }
 
-/* WEATHER */
-
-.weather-info {
-    margin-bottom: 1rem;
-}
+/* FOOTER */
 
 footer {
     background-color: var(--primary);

@@ -1,26 +1,34 @@
 @media screen and (min-width: 768px) {
 
+    /* NAVIGATION */
     .navigation {
         flex-direction: row;
+        justify-content: flex-end;
+        gap: 1rem;  
     }
 
+    /* MEMBER DIRECTORY GRID */
     #members.grid {
         grid-template-columns: repeat(3, 1fr);
     }
-    @media screen and (min-width: 768px) {
 
+    /* HOME PAGE GRID */
     .home-grid {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    /* HERO TEXT */
+    .hero-text {
+        max-width: 500px;
+    }
     .hero-text h1 {
         font-size: 3rem;
     }
 
-}
+    /* FOOTER */
     footer {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 }
-
