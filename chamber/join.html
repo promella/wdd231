@@ -54,77 +54,45 @@
 
 <div class="join-container">
 
-    <!-- FORM -->
     <section class="application-form">
         <h2>Membership Application Form</h2>
 
         <form method="get" action="thankyou.html">
 
-           <label>
+            <label>
                 First Name
-                <input 
-                    type="text" 
-                    name="fname" 
-                    autocomplete="given-name" 
-                    title="Enter your first name"
-                    required
-                >
+                <input type="text" name="fname" autocomplete="given-name" required>
             </label>
 
             <label>
                 Last Name
-                <input 
-                    type="text" 
-                    name="lname" 
-                    autocomplete="family-name" 
-                    title="Enter your last name"
-                    required
-                >
+                <input type="text" name="lname" autocomplete="family-name" required>
             </label>
 
-            <label>
-                Organization Title
-                <input 
-                    type="text" 
-                    name="orgtitle" 
-                    autocomplete="organization-title"
-                    title="Enter your organization title"
-                    required
-                >
-            </label>
+            
+            <label for="organization">Organization Title</label>
+            <input
+                type="text"
+                id="organization"
+                name="organization"
+                required
+                pattern="^[A-Za-z0-9\s\-&.,]{3,100}$"
+                title="3–100 characters: letters, numbers, spaces, and basic punctuation only"
+            />
 
             <label>
                 Email Address
-                <input 
-                    type="email"
-                    name="email"
-                    autocomplete="email"
-                    placeholder="name@example.com"
-                    title="Enter a valid email address"
-                    required
-                >
+                <input type="email" name="email" autocomplete="email" required>
             </label>
 
             <label>
                 Mobile Phone
-                <input 
-                    type="tel"
-                    name="phone"
-                    autocomplete="tel"
-                    title="Enter your mobile phone number"
-                    required
-                >
+                <input type="tel" name="phone" autocomplete="tel" required>
             </label>
 
             <label>
-                    Organization Name
-                    <input 
-                        type="text" 
-                        name="organization" 
-                        autocomplete="organization"
-                        title="Enter your organization name"
-                        required
-                    >
+                Organization Name
+                <input type="text" name="organization" autocomplete="organization" required>
             </label>
 
             <label>
@@ -139,7 +107,7 @@
 
             <label>
                 Organization Description
-                <textarea name="description" title="Describe your organization"></textarea>
+                <textarea name="description"></textarea>
             </label>
 
             <input type="hidden" id="timestamp" name="timestamp">
@@ -149,70 +117,7 @@
         </form>
     </section>
 
-    <!-- MEMBERSHIP LEVELS -->
-    <section class="membership-levels">
-        <h2>Membership Levels</h2>
-
-        <div class="membership-cards">
-
-            <div class="card membership-card">
-                <h3>NP Membership</h3>
-                <button type="button" data-modal="npModal">Benefits</button>
-            </div>
-
-            <div class="card membership-card">
-                <h3>Bronze Membership</h3>
-                <button type="button" data-modal="bronzeModal">Benefits</button>
-            </div>
-
-            <div class="card membership-card">
-                <h3>Silver Membership</h3>
-                <button type="button" data-modal="silverModal">Benefits</button>
-            </div>
-
-            <div class="card membership-card">
-                <h3>Gold Membership</h3>
-                <button type="button" data-modal="goldModal">Benefits</button>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- INFO -->
-    <section class="membership-info">
-        <h2>Why Join?</h2>
-        <p>
-            Membership provides networking opportunities,
-            business promotion, training events, and community support.
-        </p>
-    </section>
-
 </div>
-
-<!-- MODALS -->
-<dialog id="npModal">
-    <h2>NP Membership</h2>
-    <p>No fee. Community networking opportunities.</p>
-    <button type="button" class="close-modal">Close</button>
-</dialog>
-
-<dialog id="bronzeModal">
-    <h2>Bronze Membership</h2>
-    <p>Event discounts and directory listing.</p>
-    <button type="button" class="close-modal">Close</button>
-</dialog>
-
-<dialog id="silverModal">
-    <h2>Silver Membership</h2>
-    <p>Advertising opportunities and training events.</p>
-    <button type="button" class="close-modal">Close</button>
-</dialog>
-
-<dialog id="goldModal">
-    <h2>Gold Membership</h2>
-    <p>Premium spotlight advertising and VIP networking.</p>
-    <button type="button" class="close-modal">Close</button>
-</dialog>
 
 </main>
 
