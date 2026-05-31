@@ -6,10 +6,16 @@
 
 <title>Join | Johannesburg Chamber of Commerce</title>
 
-<meta name="description" content="Apply for membership with the Johannesburg Chamber of Commerce.">
+<meta name="description" content="Join the Johannesburg Chamber of Commerce to access networking events, business support, training, and growth opportunities.">
 <meta name="author" content="Prominence Ncube">
 
-<!-- Google Fonts -->
+<!-- Open Graph -->
+<meta property="og:title" content="Join Johannesburg Chamber of Commerce Membership">
+<meta property="og:description" content="Apply for membership and unlock networking, business growth, and exclusive chamber opportunities in Johannesburg.">
+<meta property="og:image" content="https://yourdomain.com/images/og-image.jpg">
+<meta property="og:url" content="https://yourdomain.com/join.html">
+
+<!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
@@ -44,11 +50,11 @@
 
 <main>
 
-<h1>Join the Chamber</h1>
+<h1>Join Johannesburg Chamber of Commerce</h1>
 
 <div class="join-container">
 
-    <!-- FORM SECTION -->
+    <!-- FORM -->
     <section class="application-form">
         <h2>Membership Application Form</h2>
 
@@ -56,32 +62,45 @@
 
             <label>
                 First Name
-                <input type="text" name="fname" required>
+                <input type="text" name="fname" autocomplete="given-name" required>
             </label>
 
             <label>
                 Last Name
-                <input type="text" name="lname" required>
+                <input type="text" name="lname" autocomplete="family-name" required>
             </label>
 
             <label>
                 Organization Title
-                <input type="text" name="orgtitle">
+                <input type="text" name="orgtitle" autocomplete="organization-title">
             </label>
 
             <label>
-                Email
-                <input type="email" name="email" required>
+                Email Address
+                <input 
+                    type="email"
+                    name="email"
+                    autocomplete="email"
+                    placeholder="name@example.com"
+                    title="Enter a valid email address"
+                    required
+                >
             </label>
 
             <label>
                 Mobile Phone
-                <input type="tel" name="phone" required>
+                <input 
+                    type="tel"
+                    name="phone"
+                    autocomplete="tel"
+                    title="Enter your mobile phone number"
+                    required
+                >
             </label>
 
             <label>
                 Organization Name
-                <input type="text" name="organization" required>
+                <input type="text" name="organization" autocomplete="organization" required>
             </label>
 
             <label>
@@ -95,8 +114,8 @@
             </label>
 
             <label>
-                Description
-                <textarea name="description"></textarea>
+                Organization Description
+                <textarea name="description" title="Describe your organization"></textarea>
             </label>
 
             <input type="hidden" id="timestamp" name="timestamp">
@@ -135,7 +154,7 @@
         </div>
     </section>
 
-    <!-- INFO SECTION -->
+    <!-- INFO -->
     <section class="membership-info">
         <h2>Why Join?</h2>
         <p>
