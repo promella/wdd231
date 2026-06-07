@@ -6,36 +6,39 @@ import { places } from "../data/discover.mjs";
 
 const discoverGrid = document.querySelector("#discover-grid");
 
+if (discoverGrid) {
+
+
 places.forEach((place) => {
 
+    const card = document.createElement("article");
 
-const card = document.createElement("article");
+    card.classList.add("card");
 
-card.classList.add("card");
+    card.innerHTML = `
+        <h2>${place.name}</h2>
 
-card.innerHTML = `
-    <h2>${place.name}</h2>
+        <figure>
+            <img
+                src="${place.image}"
+                alt="${place.name}"
+                loading="lazy"
+                width="300"
+                height="200">
+        </figure>
 
-    <figure>
-        <img
-            src="${place.image}"
-            alt="${place.name}"
-            loading="lazy"
-            width="300"
-            height="200">
-    </figure>
+        <address>${place.address}</address>
 
-    <address>${place.address}</address>
+        <p>${place.description}</p>
 
-    <p>${place.description}</p>
+        <button type="button">Learn More</button>
+    `;
 
-    <button type="button">Learn More</button>
-`;
-
-discoverGrid.appendChild(card);
-
-
+    discoverGrid.appendChild(card);
 });
+
+
+}
 
 // =====================
 // VISITOR MESSAGE
@@ -47,46 +50,49 @@ document.querySelector("#visitor-message");
 const lastVisit =
 localStorage.getItem("lastVisit");
 
-const currentVisit = Date.now();
+const currentVisit =
+Date.now();
+
+if (visitorMessage) {
+
 
 if (!lastVisit) {
 
-
-visitorMessage.textContent =
-    "Welcome! Let us know if you have any questions.";
-
+    visitorMessage.textContent =
+        "Welcome! Let us know if you have any questions.";
 
 } else {
 
-const millisecondsPerDay =
-    1000 * 60 * 60 * 24;
+    const millisecondsPerDay =
+        1000 * 60 * 60 * 24;
 
-const daysBetween =
-    Math.floor(
-        (currentVisit - Number(lastVisit))
-        / millisecondsPerDay
-    );
+    const daysBetween =
+        Math.floor(
+            (currentVisit - Number(lastVisit))
+            / millisecondsPerDay
+        );
 
-if (daysBetween < 1) {
+    if (daysBetween < 1) {
 
-    visitorMessage.textContent =
-        "Back so soon! Awesome!";
+        visitorMessage.textContent =
+            "Back so soon! Awesome!";
 
-} else if (daysBetween === 1) {
+    } else if (daysBetween === 1) {
 
-    visitorMessage.textContent =
-        "You last visited 1 day ago.";
+        visitorMessage.textContent =
+            "You last visited 1 day ago.";
 
-} else {
+    } else {
 
-    visitorMessage.textContent =
-        `You last visited ${daysBetween} days ago.`;
-}
-
-
+        visitorMessage.textContent =
+            `You last visited ${daysBetween} days ago.`;
+    }
 }
 
 localStorage.setItem(
-"lastVisit",
-currentVisit
+    "lastVisit",
+    currentVisit
 );
+
+
+}
