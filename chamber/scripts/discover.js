@@ -1,12 +1,14 @@
 import { places } from "../data/discover.mjs";
 
-
+// =====================
+// DISPLAY DISCOVER CARDS
+// =====================
 
 const discoverGrid = document.querySelector("#discover-grid");
 
 places.forEach((place) => {
 
-```
+
 const card = document.createElement("article");
 
 card.classList.add("card");
@@ -31,9 +33,13 @@ card.innerHTML = `
 `;
 
 discoverGrid.appendChild(card);
-```
+
 
 });
+
+// =====================
+// VISITOR MESSAGE
+// =====================
 
 const visitorMessage =
 document.querySelector("#visitor-message");
@@ -45,14 +51,13 @@ const currentVisit = Date.now();
 
 if (!lastVisit) {
 
-```
+
 visitorMessage.textContent =
     "Welcome! Let us know if you have any questions.";
-```
+
 
 } else {
 
-```
 const millisecondsPerDay =
     1000 * 60 * 60 * 24;
 
@@ -77,7 +82,7 @@ if (daysBetween < 1) {
     visitorMessage.textContent =
         `You last visited ${daysBetween} days ago.`;
 }
-```
+
 
 }
 
