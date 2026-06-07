@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>Discover | Johannesburg Chamber of Commerce</title>
+
+<meta name="description"
+    content="Discover attractions, landmarks, history, culture, and opportunities in Johannesburg, South Africa.">
+
+<meta name="author" content="Prominence Ncube">
+
+<!-- Open Graph Meta Tags -->
+<meta property="og:title"
+    content="Discover Johannesburg | Chamber of Commerce">
+
+<meta property="og:description"
+    content="Explore attractions, landmarks, history, and culture in Johannesburg.">
+
+<meta property="og:image"
+    content="https://promella.github.io/wdd231/chamber/images/hero.webp">
+
+<meta property="og:url"
+    content="https://promella.github.io/wdd231/chamber/discover.html">
+
+<meta property="og:type" content="website">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+    rel="stylesheet">
+
+<!-- Favicon -->
+<link rel="icon" href="images/favicon.ico">
+
+<!-- Existing Chamber Styles -->
+<link rel="stylesheet" href="styles/small.css">
+<link rel="stylesheet" href="styles/larger.css">
+
+<!-- Discover Styles -->
+<link rel="stylesheet" href="styles/discover.css">
+
+<!-- Existing Navigation Script -->
+<script src="scripts/home.js" defer></script>
+
+<!-- Discover Page Script -->
+<script type="module" src="scripts/discover.js" defer></script>
+```
+
+</head>
+
+<body>
+
+```
+<header>
+    <div class="logo">
+        <img src="images/logo.webp" alt="Chamber Logo">
+        <span>Chamber of Commerce</span>
+    </div>
+
+    <button id="menu" aria-label="Open navigation menu"></button>
+
+    <nav class="navigation" aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join</a>
+        <a href="thankyou.html">Thank You</a>
+        <a href="discover.html" class="active">Discover</a>
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero">
+
+        <img src="images/johannesburg.skyline.2017.jpg"
+            alt="Johannesburg skyline"
+            loading="lazy">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-text">
+            <h1>Discover Johannesburg</h1>
+
+            <p>
+                Explore the culture, history, attractions,
+                and opportunities that make Johannesburg one
+                of Africa's most dynamic cities.
+            </p>
+        </div>
+
+    </section>
+
+    <section class="card visit-message">
+        <h2>Visitor Information</h2>
+        <p id="visitor-message">
+            Welcome! Let us know if you have any questions.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>About Johannesburg</h2>
+
+        <p>
+            Johannesburg is the largest city in South Africa and
+            serves as the country's financial and economic center.
+            The city offers world-class business opportunities,
+            cultural attractions, historical landmarks, and
+            recreational spaces.
+        </p>
+    </section>
+
+    <section id="discover-grid" class="discover-grid">
+        <!-- Cards created dynamically by discover.js -->
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Johannesburg Chamber of Commerce</p>
+    <p>Prominence Ncube | WDD231</p>
+    <p>Johannesburg, South Africa</p>
+</footer>
+```
+
+</body>
+
+</html>
