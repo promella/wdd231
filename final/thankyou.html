@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<title>Thank You</title>
+
+<link rel="stylesheet"
+href="styles/base.css">
+
+<script defer>
+
+document.addEventListener(
+"DOMContentLoaded", () => {
+
+const params =
+new URLSearchParams(
+window.location.search
+);
+
+document.querySelector("#name")
+.textContent =
+params.get("name");
+
+});
+
+</script>
+
+</head>
+
+<body>
+
+<main>
+
+<h1>Thank You!</h1>
+
+<p>
+Thank you
+<span id="name"></span>
+for contacting us.
+</p>
+
+</main>
+
+</body>
+</html>
