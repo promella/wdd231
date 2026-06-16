@@ -1,107 +1,122 @@
 [
-{
-"id":1,
-"name":"Shea Moisture Leave In",
-"type":"Moisturizer",
-"benefit":"Hydration",
-"rating":"4.8"
-},
-{
-"id":2,
-"name":"Jamaican Black Castor Oil",
-"type":"Oil",
-"benefit":"Growth",
-"rating":"4.9"
-},
-{
-"id":3,
-"name":"Coconut Oil",
-"type":"Oil",
-"benefit":"Shine",
-"rating":"4.7"
-},
-{
-"id":4,
-"name":"Aloe Vera Gel",
-"type":"Treatment",
-"benefit":"Moisture",
-"rating":"4.8"
-},
-{
-"id":5,
-"name":"Mielle Organics Oil",
-"type":"Oil",
-"benefit":"Growth",
-"rating":"4.9"
-},
-{
-"id":6,
-"name":"Hair Butter",
-"type":"Sealant",
-"benefit":"Moisture",
-"rating":"4.7"
-},
-{
-"id":7,
-"name":"Deep Conditioner",
-"type":"Conditioner",
-"benefit":"Repair",
-"rating":"4.8"
-},
-{
-"id":8,
-"name":"Curl Cream",
-"type":"Styler",
-"benefit":"Definition",
-"rating":"4.6"
-},
-{
-"id":9,
-"name":"Rice Water Spray",
-"type":"Treatment",
-"benefit":"Strength",
-"rating":"4.7"
-},
-{
-"id":10,
-"name":"Argan Oil",
-"type":"Oil",
-"benefit":"Softness",
-"rating":"4.8"
-},
-{
-"id":11,
-"name":"Olive Oil",
-"type":"Oil",
-"benefit":"Moisture",
-"rating":"4.6"
-},
-{
-"id":12,
-"name":"Leave In Conditioner",
-"type":"Conditioner",
-"benefit":"Hydration",
-"rating":"4.8"
-},
-{
-"id":13,
-"name":"Scalp Serum",
-"type":"Treatment",
-"benefit":"Scalp Health",
-"rating":"4.7"
-},
-{
-"id":14,
-"name":"Twist Cream",
-"type":"Styler",
-"benefit":"Twist Outs",
-"rating":"4.8"
-},
-{
-"id":15,
-"name":"Hair Growth Oil",
-"type":"Oil",
-"benefit":"Growth",
-"rating":"4.9"
-}
+  {
+    "id": 1,
+    "name": "Shea Moisture Leave In",
+    "type": "Moisturizer",
+    "benefit": "Hydration",
+    "rating": "4.8",
+    "image": "images/shea-moisture.webp"
+  },
+  {
+    "id": 2,
+    "name": "Jamaican Black Castor Oil",
+    "type": "Oil",
+    "benefit": "Growth",
+    "rating": "4.9",
+    "image": "images/castor-oil.webp"
+  },
+  {
+    "id": 3,
+    "name": "Coconut Oil",
+    "type": "Oil",
+    "benefit": "Shine",
+    "rating": "4.7",
+    "image": "images/coconut-oil.webp"
+  },
+  {
+    "id": 4,
+    "name": "Aloe Vera Gel",
+    "type": "Treatment",
+    "benefit": "Moisture",
+    "rating": "4.8",
+    "image": "images/aloe-vera.webp"
+  },
+  {
+    "id": 5,
+    "name": "Mielle Organics Oil",
+    "type": "Oil",
+    "benefit": "Growth",
+    "rating": "4.9",
+    "image": "images/mielle-oil.webp"
+  },
+  {
+    "id": 6,
+    "name": "Hair Butter",
+    "type": "Sealant",
+    "benefit": "Moisture",
+    "rating": "4.7",
+    "image": "images/hair-butter.webp"
+  },
+  {
+    "id": 7,
+    "name": "Deep Conditioner",
+    "type": "Conditioner",
+    "benefit": "Repair",
+    "rating": "4.8",
+    "image": "images/deep-conditioner.webp"
+  },
+  {
+    "id": 8,
+    "name": "Curl Cream",
+    "type": "Styler",
+    "benefit": "Definition",
+    "rating": "4.6",
+    "image": "images/curl-cream.webp"
+  },
+  {
+    "id": 9,
+    "name": "Rice Water Spray",
+    "type": "Treatment",
+    "benefit": "Strength",
+    "rating": "4.7",
+    "image": "images/rice-water.webp"
+  },
+  {
+    "id": 10,
+    "name": "Argan Oil",
+    "type": "Oil",
+    "benefit": "Softness",
+    "rating": "4.8",
+    "image": "images/argan-oil.webp"
+  },
+  {
+    "id": 11,
+    "name": "Olive Oil",
+    "type": "Oil",
+    "benefit": "Moisture",
+    "rating": "4.6",
+    "image": "images/olive-oil.webp"
+  },
+  {
+    "id": 12,
+    "name": "Leave In Conditioner",
+    "type": "Conditioner",
+    "benefit": "Hydration",
+    "rating": "4.8",
+    "image": "images/leave-in.webp"
+  },
+  {
+    "id": 13,
+    "name": "Scalp Serum",
+    "type": "Treatment",
+    "benefit": "Scalp Health",
+    "rating": "4.7",
+    "image": "images/scalp-serum.webp"
+  },
+  {
+    "id": 14,
+    "name": "Twist Cream",
+    "type": "Styler",
+    "benefit": "Twist Outs",
+    "rating": "4.8",
+    "image": "images/twist-cream.webp"
+  },
+  {
+    "id": 15,
+    "name": "Hair Growth Oil",
+    "type": "Oil",
+    "benefit": "Growth",
+    "rating": "4.9",
+    "image": "images/hair-growth-oil.webp"
+  }
 ]
