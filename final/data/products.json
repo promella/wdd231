@@ -5,7 +5,7 @@
     "type": "Moisturizer",
     "benefit": "Hydration",
     "rating": "4.8",
-    "image": "images/shea-moisture.webp"
+    "image": "images/sheabutter.webp"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "type": "Oil",
     "benefit": "Growth",
     "rating": "4.9",
-    "image": "images/castor-oil.webp"
+    "image":"images/blackcastoroil.webp"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "type": "Oil",
     "benefit": "Shine",
     "rating": "4.7",
-    "image": "images/coconut-oil.webp"
+    "image": "images/coconutoil.webp"
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "type": "Treatment",
     "benefit": "Moisture",
     "rating": "4.8",
-    "image": "images/aloe-vera.webp"
+    "image": "images/aloevera.webp"
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "type": "Oil",
     "benefit": "Growth",
     "rating": "4.9",
-    "image": "images/mielle-oil.webp"
+    "image": "images/hairoil.webp"
   },
   {
     "id": 6,
@@ -45,7 +45,7 @@
     "type": "Sealant",
     "benefit": "Moisture",
     "rating": "4.7",
-    "image": "images/hair-butter.webp"
+    "image": "images/hairbutter.webp"
   },
   {
     "id": 7,
@@ -53,7 +53,7 @@
     "type": "Conditioner",
     "benefit": "Repair",
     "rating": "4.8",
-    "image": "images/deep-conditioner.webp"
+    "image": "images/conditioner.webp"
   },
   {
     "id": 8,
@@ -61,7 +61,7 @@
     "type": "Styler",
     "benefit": "Definition",
     "rating": "4.6",
-    "image": "images/curl-cream.webp"
+    "image": "images/curlcream.webp"
   },
   {
     "id": 9,
@@ -101,7 +101,7 @@
     "type": "Treatment",
     "benefit": "Scalp Health",
     "rating": "4.7",
-    "image": "images/scalp-serum.webp"
+    "image": "images/scalpserum.webp"
   },
   {
     "id": 14,
@@ -109,7 +109,7 @@
     "type": "Styler",
     "benefit": "Twist Outs",
     "rating": "4.8",
-    "image": "images/twist-cream.webp"
+    "image": "images/twistcream.webp"
   },
   {
     "id": 15,
@@ -117,6 +117,6 @@
     "type": "Oil",
     "benefit": "Growth",
     "rating": "4.9",
-    "image": "images/hair-growth-oil.webp"
+    "image": "images/hairoil.webp"
   }
 ]
